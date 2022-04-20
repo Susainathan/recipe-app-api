@@ -19,7 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     # path('swagger/', SpectacularAPIView.as_view(), name='schema'),
-    # path('swagger-user/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    # path('swagger-user/', SpectacularSwaggerView.as_view(url_name='schema'),
+    # name='swagger-ui'),
     path('admin/', admin.site.urls),
     path('api/user/', include('user.urls')),
     path('api/recipe/', include('recipe.urls')),
